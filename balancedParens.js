@@ -17,11 +17,7 @@ const checkBalance = (str) => {
             closedParentheses++
         }
     }
-    if(openParentheses === closedParentheses){
-        return true
-    } else {
-        return false
-    }
+    return openParentheses === closedParentheses
 }
 
 console.log(checkBalance(sample1))
